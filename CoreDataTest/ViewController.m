@@ -40,7 +40,7 @@
         person.name = _nameTf.text;
         person.age = _agetf.text.integerValue;
         
-        
+        //aa
         NSError *error;
         [[CoreDatacoreData sharedCoreDatacoreData].managedObjectContext  save:&error];
         if (!error) {
