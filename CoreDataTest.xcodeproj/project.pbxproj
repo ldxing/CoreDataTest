@@ -15,6 +15,9 @@
 		CD76B8BE1FA3383600590BB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD76B8BD1FA3383600590BB6 /* main.m */; };
 		CD76B8C81FA3383600590BB6 /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD76B8C71FA3383600590BB6 /* CoreDataTestTests.m */; };
 		CD76B8D31FA3383600590BB6 /* CoreDataTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD76B8D21FA3383600590BB6 /* CoreDataTestUITests.m */; };
+		CDBC451D1FA6DBE8004FE270 /* CoreDatacoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC451C1FA6DBE8004FE270 /* CoreDatacoreData.m */; };
+		CDBC452A1FA70765004FE270 /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC45271FA70765004FE270 /* Person+CoreDataClass.m */; };
+		CDBC452B1FA70765004FE270 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC45291FA70765004FE270 /* Person+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		CD76B8CE1FA3383600590BB6 /* CoreDataTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD76B8D21FA3383600590BB6 /* CoreDataTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestUITests.m; sourceTree = "<group>"; };
 		CD76B8D41FA3383600590BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBC451B1FA6DBE8004FE270 /* CoreDatacoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDatacoreData.h; sourceTree = "<group>"; };
+		CDBC451C1FA6DBE8004FE270 /* CoreDatacoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDatacoreData.m; sourceTree = "<group>"; };
+		CDBC451F1FA7056B004FE270 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CDBC45261FA70765004FE270 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
+		CDBC45271FA70765004FE270 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
+		CDBC45281FA70765004FE270 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CDBC45291FA70765004FE270 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,11 @@
 		CD76B8A21FA3383600590BB6 = {
 			isa = PBXGroup;
 			children = (
+				CDBC45261FA70765004FE270 /* Person+CoreDataClass.h */,
+				CDBC45271FA70765004FE270 /* Person+CoreDataClass.m */,
+				CDBC45281FA70765004FE270 /* Person+CoreDataProperties.h */,
+				CDBC45291FA70765004FE270 /* Person+CoreDataProperties.m */,
+				CDBC451E1FA7056B004FE270 /* Model.xcdatamodeld */,
 				CD76B8AD1FA3383600590BB6 /* CoreDataTest */,
 				CD76B8C61FA3383600590BB6 /* CoreDataTestTests */,
 				CD76B8D11FA3383600590BB6 /* CoreDataTestUITests */,
@@ -105,6 +120,8 @@
 				CD76B8AF1FA3383600590BB6 /* AppDelegate.m */,
 				CD76B8B11FA3383600590BB6 /* ViewController.h */,
 				CD76B8B21FA3383600590BB6 /* ViewController.m */,
+				CDBC451B1FA6DBE8004FE270 /* CoreDatacoreData.h */,
+				CDBC451C1FA6DBE8004FE270 /* CoreDatacoreData.m */,
 				CD76B8B41FA3383600590BB6 /* Main.storyboard */,
 				CD76B8B71FA3383600590BB6 /* Assets.xcassets */,
 				CD76B8B91FA3383600590BB6 /* LaunchScreen.storyboard */,
@@ -199,6 +216,7 @@
 				TargetAttributes = {
 					CD76B8AA1FA3383600590BB6 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					CD76B8C21FA3383600590BB6 = {
@@ -268,6 +286,9 @@
 				CD76B8B31FA3383600590BB6 /* ViewController.m in Sources */,
 				CD76B8BE1FA3383600590BB6 /* main.m in Sources */,
 				CD76B8B01FA3383600590BB6 /* AppDelegate.m in Sources */,
+				CDBC451D1FA6DBE8004FE270 /* CoreDatacoreData.m in Sources */,
+				CDBC452B1FA70765004FE270 /* Person+CoreDataProperties.m in Sources */,
+				CDBC452A1FA70765004FE270 /* Person+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +451,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4M3E736K84;
 				INFOPLIST_FILE = CoreDataTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--17KJS--..CoreDataTest";
+				PRODUCT_BUNDLE_IDENTIFIER = "--17KJS--..AlertTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreDataTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +469,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4M3E736K84;
 				INFOPLIST_FILE = CoreDataTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--17KJS--..CoreDataTest";
+				PRODUCT_BUNDLE_IDENTIFIER = "--17KJS--..AlertTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreDataTest-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -546,6 +576,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDBC451E1FA7056B004FE270 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDBC451F1FA7056B004FE270 /* Model.xcdatamodel */,
+			);
+			currentVersion = CDBC451F1FA7056B004FE270 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD76B8A31FA3383600590BB6 /* Project object */;
 }
