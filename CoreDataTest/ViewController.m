@@ -71,7 +71,7 @@
     NSLog(@"====search====\n");
     
     NSFetchRequest *fetchRequest = [Person fetchRequest];
-    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"age > %@",@0]];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"age > %@",@30]];
     
     NSArray<NSSortDescriptor *> *sortDescriptor = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
     
